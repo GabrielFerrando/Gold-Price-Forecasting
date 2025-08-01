@@ -13,7 +13,7 @@ st.set_page_config('Previsão do Preço do Ouro', layout='wide')
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('C:/Users/ferra/Projetos Treino/Gold Price Forecasting Project/df_base.csv', index_col='Date')
+    df = pd.read_csv('df_base.csv', index_col='Date')
     return df
 
 df = load_data()
@@ -81,6 +81,7 @@ st.subheader('📊 Distribuição do preço do ouro')
 with st.expander('Visualizar Histograma'):
     fig_hist = px.histogram(df, x='Price', nbins=50)
     st.plotly_chart(fig_hist, use_container_width=True)
+
 
 
 
