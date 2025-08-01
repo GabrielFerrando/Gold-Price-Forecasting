@@ -13,8 +13,8 @@ st.set_page_config('Previsão do Preço do Ouro', layout='wide')
 
 @st.cache_data
 def load_data2():
-    df_results = pd.read_csv('C:/Users/ferra/Projetos Treino/Gold Price Forecasting Project/results.csv', index_col='Date')
-    df_tunned = pd.read_csv('C:/Users/ferra/Projetos Treino/Gold Price Forecasting Project/results_tunned.csv', index_col='Date')
+    df_results = pd.read_csv('results.csv', index_col='Date')
+    df_tunned = pd.read_csv('results_tunned.csv', index_col='Date')
     return df_results, df_tunned
 
 df_results, df_tunned = load_data2()
@@ -242,4 +242,5 @@ with st.expander('Visualizar Evolução das Métricas'):
             - Pontos mais distantes da linha zero indicam maiores erros.
             - Podemos identificar momentos em que os modelos se desviaram mais.
             - O tuning impactou positivamente na disperção dos erros.
+
             """)
