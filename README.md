@@ -34,14 +34,14 @@ Ambos os modelos foram comparados em sua forma padrão e após tuning de hiperpa
 ### 🔹 Random Forest
 | Métrica | Antes do Tuning | Após Tuning |
 |--------|------------------|-------------|
-| MAE    | 13               | 12          |
-| RMSE   | 19               | 16          |
+| MAE    | 13.69               | 12.33          |
+| RMSE   | 19.08               | 16.91          |
 
 ### 🔹 XGBoost
 | Métrica | Antes do Tuning | Após Tuning |
 |--------|------------------|-------------|
-| MAE    | 19               | 14          |
-| RMSE   | 31               | 20          |
+| MAE    | 19.97               | 14.06          |
+| RMSE   | 31.64               | 20.21          |
 
 Os modelos mostraram **melhorias significativas após o tuning**, principalmente na redução do erro médio.
 
@@ -51,14 +51,7 @@ Os modelos mostraram **melhorias significativas após o tuning**, principalmente
 
 Você pode acessar a versão interativa do projeto no Streamlit:
 
-👉 [Acessar o app no Streamlit](https://seu-link.streamlit.app)
+👉 [Acessar o app no Streamlit](https://gold-price-forecasting-project.streamlit.app/)
 
 ---
 
-## 📁 Como rodar localmente
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seuusuario/projeto-ouro.git
-cd projeto-ouro
